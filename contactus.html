@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book-detailpage | Ebookstore</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?
+      family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!------------------ Header ------------------>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/EbookStore-Logo.png" alt="EbookStore-Logo" />
+          </a>
+        </div>
+        <!----------  Nav Bar ------------------>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ebooks.html">Ebooks</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img
+            src="images/cart.png"
+            alt="Shoping Cart"
+            width="28px"
+            height="28px"
+            style="margin-left: 10px; margin-top: 15px"
+          />
+        </a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+
+    <!-- contact1 -->
+    <div class=" section-gap"></div>
+      <div class="wrapper">
+        <h3 class="global-title text-center">Contact us</h3>
+        <div class="d-grid contact-view">
+          <div class="cont-details">
+
+
+            <div class="cont-top">
+
+              <div class="cont-left text-center">
+                <span class="fa fa-phone text-primary"></span>
+              </div>
+
+              <div class="cont-right">
+                <h6>Call Us</h6>
+                <p><a href="#">+123 45 67 89</a></p>
+              </div>
+
+            </div>
+
+
+            <div class="cont-top margin-up">
+
+              <div class="cont-left text-center">
+                <span class="fa fa-envelope-o text-primary"></span>
+              </div>
+              <div class="cont-right">
+                <h6>Email Us</h6>
+                <p><a href="mailto:example@mail.com" class="mail">example@mail.com</a></p>
+              </div>
+              
+            </div>
+
+
+            <div class="cont-top margin-up">
+              <div class="cont-left text-center">
+                <span class="fa fa-map-marker text-primary"></span>
+              </div>
+              <div class="cont-right">
+                <h6>Address</h6>
+                <p>Address here, Governmet Politechnic, Pune, India.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="map-content">
+            <form action="#" method="post">
+              <div class="twice-two">
+                <input type="text" class="form-control" name="w3lName" id="w3lName" placeholder="Name" required="">
+                <input type="email" class="form-control" name="w3lSender" id="w3lSender" placeholder="Email"
+                  required="">
+              </div>
+
+              <div class="twice">
+                <input type="text" class="form-control" name="w3lSubject" id="w3lSubject" placeholder="Subject"
+                  required="">
+              </div>
+
+              <textarea name="w3lMessage" class="form-control" id="w3lMessage" placeholder="Message"
+                required=""></textarea>
+              <button type="submit" class="btn btn-contact">Send Message</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    <br>
+<br>
+  <!-- /contact1 -->
+    <!-- ---------------------footer------------------- -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="images/Playstore.png" />
+              <img src="images/Applestore.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/EbookStore-Logo-footer.png" />
+            
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Youtube</li>
+              <li>Instagram</li>
+              <li>Twitterr</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        
+      </div>
+    </div>
+    <!-- ---------Javascript for toggle menu------------- -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
